@@ -1,0 +1,369 @@
+html {
+	margin: 0;
+}
+body {
+	box-sizing: border-box;
+	margin:0;
+	background-color:#222;
+}
+
+header {
+	background-color:#fc0;
+	font-family: 'Open Sans', sans-serif;
+	min-height:6em;
+	padding:1em 0;
+}
+header #wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100vh;
+	margin:0 auto;
+}
+header #logo {
+	color:#fff;
+	background-image:url('../assets/logo.png');
+	background-repeat:no-repeat;
+	background-position:left center;
+	background-size:contain;
+	width:8em;
+	height:6em;
+}
+header #logo a {
+	display:block;
+	width:8em;
+	height:6em;
+}
+header #logo span {
+	display:none;
+}
+header nav {
+	color:#fff;
+	text-align:right;
+	
+}
+header nav ul.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+header nav ul.menu li {
+	display:inline-block;
+	padding-top:1.5em;
+}
+header nav ul.menu li a {
+	color:#fff;
+	background-color:transparent;
+	display: block;
+	text-decoration:none;
+	padding:.5em 1em;
+	margin:.5em;
+	border-radius:2em;
+}
+header nav ul.menu li a:hover {
+	color:#fc0;
+	background-color:#fff;
+}
+header nav ul.menu .current-menu-item a, header nav ul.menu .current_page_item a {
+	color:#fc0;
+	background-color:#fff;
+	
+}
+
+footer {
+	font-family: 'Open Sans', sans-serif;
+	background:#222;
+	color:#fff;
+}
+footer #zones {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width:100vh;
+	margin:0 auto;
+}
+footer #zones > div {
+	display:block;
+	padding:2em 1em;
+	margin-top:2em;
+	margin-bottom:1em;
+	width:100%;
+	text-align:left;
+}
+footer #zones > div a, footer #zones > div p {
+	color:#fc0;
+	text-decoration:none;
+	padding-left: 1.6em;
+	background-size: 20px 20px;
+}
+footer #zones > div#f_left a {
+	background: transparent url('../assets/map.svg') center left no-repeat;
+}
+footer #zones > div a[href^='mailto'] {
+	background: transparent url('../assets/mail.svg') center left no-repeat;
+}
+footer #zones > div a:hover {
+	color:#fff;
+}
+footer #zones > div#f_center {
+	text-align:center;
+}
+footer #zones > div#f_center img {
+	margin:0 auto;
+}
+footer #credits {
+	margin:0;
+	padding:1em;
+	text-align:center;
+	color:#666;
+	font-size:.8em;
+}
+
+main {
+	background-color:#fff;
+	font-family: 'Montserrat', sans-serif;
+	padding:0;
+	padding-bottom: 2em;
+}
+
+main h1, main h2, main h3, main h4, main .wp-block-button__link, main .bouton__link {
+	font-family: 'Open Sans', sans-serif;
+}
+main h1 {
+	font-size:3em;
+	color:#fc0;
+}
+main h2 {
+	font-size:2.4em;
+	color:#f7b34c;
+}
+main h3 {
+	font-size:2em;
+	color:#f7b34c;
+	text-align: center;
+	justify-content: center;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+main h4 {
+	font-size:1.8em;
+	color:#fc0;
+}
+main h5, main h6 {
+	font-size:1.5em;
+}
+main a:link, main a:active {
+	color:#fc0;
+}
+main a:visited, main a:hover {
+	color:#f7b34c;
+}
+main .inner-container {
+	width:100vh;
+	margin:0 auto;
+}
+main .foreword {
+	background-color:#222;
+	color:#fc0;
+	width:100vh;
+	margin:0 auto;
+	padding:1em;
+	opacity:85%;
+}
+.wp-block-cover{
+	height: 640px;
+}
+
+.inner-container-animations .is-layout-flex{
+	padding-left: 25%;
+	padding-right: 25%;
+}
+body.category main, main.galerie_photos, body.single-post main, body.page-template-les-brasseries main {
+	padding:2em;
+}
+body.home main {
+	padding-bottom:0;
+}
+body.home main .wp-block-cover h2, body.home main .banniere h2 {
+	text-shadow: 2px 2px #222;
+	
+}
+body main article div.sponsor_icon {
+	float:right;
+	margin-bottom:1em;
+	margin-left:1em;
+}
+
+body.single-brewery main article {
+	padding-top:2em;
+}
+
+body.single-brewery main article div.brewery_logo {
+	float:left;
+	margin-bottom:1em;
+	margin-right:1em;
+}
+body.single-brewery main article div.brewery_desc {
+	clear:both;
+	
+}
+body.single-brewery article h2 {
+	height:2em;
+	line-height:2em;
+	padding-left:4em;
+}
+body.single-brewery article p img {
+	width:100vh;
+	height:auto;
+}
+
+body.single-brewery div.brewery_backlink {
+	padding-top:1em;
+}
+body.single-brewery .brewery_backlink a {
+	display:block;
+	color:#fff;
+	background:#fc0;
+	padding:.5em 1em;
+	text-decoration:none;
+	border-radius:2em;
+	width:11%;
+}
+
+div.listing {
+	display:grid;
+	grid-gap: 1em 1em;
+	grid-template-columns: 25% 25% 25% 25%;
+	justify-content: center;
+	align-content: center;
+	width:100vh;
+	margin:0 auto;
+}
+div.listing article {
+	border:2px solid #ccc;
+	padding:1em;
+}
+div.listing article a {
+	display:block;
+	margin:0 auto;
+	width:157px;
+	height:157px;
+	text-align:center;
+}
+ul.post-categories {
+	list-style:none;
+	margin:1em 0;
+	padding:0;
+}
+ul.post-categories li {
+	display:inline-block;
+	padding:.5em;
+	margin:0;
+}
+ul.post-categories li a {
+	display:block;
+	color:#fff;
+	background:#fc0;
+	padding:.5em 1em;
+	text-decoration:none;
+	border-radius:2em;
+}
+ul.post-categories li a:hover {
+	background:#f7b34c;
+}
+ul.post-categories li a:before{
+	content:'< ';
+}
+
+.has-jaune-background-color {
+	background:#fc0;
+	color:#fff !important;
+}
+.has-jaune-background-color:hover {
+	background:#eee;
+	color:#fc0 !important;
+}
+.has-jaune-color {
+	color:#fc0 !important;
+}
+.has-orange-background-color {
+	background-color:#f7b34c !important;
+}
+.has-orange-color {
+	background-color:#f7b34c !important;
+}
+.has-bleu-background-color {
+	background-color:#00e;
+	color:#fff !important;
+}
+.has-bleu-background-color:hover {
+	background-color:#eee;
+	color:#00e !important;
+}
+
+.has-bleu-color {
+	color:#00e !important;
+}
+
+.bigblock {
+	padding:2em 1em;
+}
+
+main hr {
+	width:25vh;
+	border:none;
+	border-top:2px solid #ccc;
+	margin:2em auto 4em auto;
+}
+main .conteneur, main .wp-block-group {
+	width:100vh;
+	margin:0 auto;
+}
+
+
+.wpcf7-form, .formulaire {
+	width:100vh;
+	margin:auto;
+	padding:2em;
+}
+
+.wpcf7-form label, .formulaire label {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wpcf7-form input, .wpcf7-form textarea, .formulaire input, .formulaire textarea {
+	font-family: 'Open Sans', sans-serif;
+	padding:.5em;
+	border:none;
+	border-bottom:1px solid #fc0;
+	width:100%;
+	font-size:1em;
+	margin-bottom:1em;
+	opacity:75%;
+}
+
+.wpcf7-form input[type=submit], .wpcf7-form button, .formulaire input[type=submit], .formulaire button {
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	padding:1em;
+	border:none;
+	border-radius:2em;
+	background:#fc0;
+	font-size:1em;
+	color:#fff;
+	display:block;
+	margin:1em auto;
+	opacity:100%;
+	width:auto;
+	cursor:pointer;
+}
+
+
+.wpcf7-form input[type=submit]:hover, .formulaire input[type=submit]:hover {
+	color:#fc0;
+	background-color:#eee;
+}
+
+.wpcf7-not-valid {
+	border-bottom:1px solid #f00 !important;
+}
